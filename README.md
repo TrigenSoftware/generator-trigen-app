@@ -26,13 +26,13 @@ Yeoman generator for web app development.
 
 # Usage
 
-1) Install:
+Install:
 
 ```bash
 yarn global add yo generator-trigen-app
 ```
 
-2) Now you can run generator:
+Now you can run generator:
 
 ```bash
 yo trigen-app
