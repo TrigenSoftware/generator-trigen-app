@@ -1,0 +1,63 @@
+{
+  "name": "generator-trigen-app",
+  "version": "1.0.0",
+  "description": "Yeoman generator for web app development.",
+  "author": "dangreen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrigenSoftware/generator-trigen-app"
+  },
+  "bugs": {
+    "url": "https://github.com/TrigenSoftware/generator-trigen-app/issues"
+  },
+  "main": "generators/app/index.js",
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "scripts": {
+    "lint": "eslint --cache 'src/**/*.js'",
+    "checkSize": "size-limit",
+    "test": "npm run lint && npm run build && npm run checkSize",
+    "copy:templates": "rm -rf generators/app/templates; mkdir -p generators/app; cp -R templates generators/app/templates",
+    "build": "rollup -c && npm run copy:templates",
+    "watch": "rollup -c -w",
+    "cleanPublish": "npm run test && clean-publish"
+  },
+  "keywords": [
+    "trigen",
+    "frontend",
+    "app",
+    "webapp",
+    "react",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "del": "^4.0.0",
+    "unzipper": "^0.9.11",
+    "yeoman-generator": "^3.2.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "babel-preset-trigen": "^1.8.0",
+    "browserslist-config-trigen": "^1.1.0",
+    "clean-publish": "^1.1.0",
+    "eslint": "^5.15.1",
+    "eslint-config-trigen": "^3.2.3",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "rollup": "^1.4.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-eslint": "^5.0.0",
+    "size-limit": "^0.21.1"
+  },
+  "files": [
+    "generators"
+  ]
+}

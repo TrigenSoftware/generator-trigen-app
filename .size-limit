@@ -1,0 +1,5 @@
+[{
+	path:  "generators/app/index.js",
+	limit: "30 KB",
+	webpack: false
+}]
