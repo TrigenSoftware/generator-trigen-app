@@ -89,29 +89,47 @@ export function deleteTemplate(projectTemplateDir) {
 	]);
 }
 
+export function makeReadme(weatherReadme, { pkg }) {
+
+	let scripts = '';
+	let env = '';
+
+	try {
+		scripts = /(## Available scripts[\s\S]*\n)(\n#|$)/gm.exec(weatherReadme)[1];
+		env = /(## Environment variables[\s\S]*\n)(\n#|$)/gm.exec(weatherReadme)[1];
+	} catch (err) {
+		// ignore
+	}
+
+	return `
+# ${pkg.name}
+
+${pkg.description}
+
+${scripts}
+${env}
+> This project generated with [generator-trigen-app](https://www.npmjs.com/package/generator-trigen-app)
+`;
+}
+
 export function getFiles({
 	license,
 	src
-}, projectTemplatePath, templatePath) {
+}, projectTemplatePath) {
 
-	const allFiles = [
-		projectTemplatePath('.*'),
-		projectTemplatePath('**', '*')
-	];
-	const readme = [
-		templatePath('README.md')
-	];
 	const files = [
-		[false, allFiles],
-		[true, readme]
+		projectTemplatePath('.*'),
+		projectTemplatePath('**', '*'),
+		`!${projectTemplatePath('README.md')}`,
+		`!${projectTemplatePath('yarn.lock')}`
 	];
 
 	if (!license) {
-		allFiles.push(`!${projectTemplatePath('LICENSE')}`);
+		files.push(`!${projectTemplatePath('LICENSE')}`);
 	}
 
 	if (!src) {
-		allFiles.push(`!${projectTemplatePath('src', '**', '*')}`);
+		files.push(`!${projectTemplatePath('src', '**', '*')}`);
 	}
 
 	return files;

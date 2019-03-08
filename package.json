@@ -1,6 +1,6 @@
 {
   "name": "generator-trigen-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Yeoman generator for web app development.",
   "author": "dangreen",
   "license": "MIT",
@@ -19,8 +19,7 @@
     "lint": "eslint --cache 'src/**/*.js'",
     "checkSize": "size-limit",
     "test": "npm run lint && npm run build && npm run checkSize",
-    "copy:templates": "rm -rf generators/app/templates; mkdir -p generators/app; cp -R templates generators/app/templates",
-    "build": "rollup -c && npm run copy:templates",
+    "build": "rollup -c",
     "watch": "rollup -c -w",
     "cleanPublish": "npm run test && clean-publish"
   },

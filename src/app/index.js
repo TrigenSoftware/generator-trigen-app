@@ -13,6 +13,7 @@ import editWebmanifest from './editWebmanifest';
 import {
 	getTemplate,
 	deleteTemplate,
+	makeReadme,
 	getFiles
 } from './template';
 
@@ -137,6 +138,19 @@ export default class GeneratorTrigenFrontend extends Generator {
 		this._editWebmanifest();
 	}
 
+	_makeReadme() {
+
+		const projectReadme = this.fs.read(
+			this.projectTemplatePath('README.md')
+		);
+		const readme = makeReadme(projectReadme, this.props);
+
+		this.fs.write(
+			this.destinationPath('README.md'),
+			readme
+		);
+	}
+
 	async writing() {
 
 		const {
@@ -163,26 +177,17 @@ export default class GeneratorTrigenFrontend extends Generator {
 			);
 		}
 
+		this._makeReadme();
+
 		const files = getFiles(
 			{
 				license: pkgProps && pkgProps.license == 'MIT',
 				src:     !fs.existsSync(this.destinationPath('src'))
 			},
-			this.projectTemplatePath.bind(this),
-			this.templatePath.bind(this)
+			this.projectTemplatePath.bind(this)
 		);
 
-		files.forEach(([
-			isTemplate,
-			files
-		]) => {
-
-			if (isTemplate) {
-				this.fs.copyTpl(files, this.destinationRoot(), props);
-			} else {
-				this.fs.copy(files, this.destinationRoot());
-			}
-		});
+		this.fs.copy(files, this.destinationRoot());
 
 		await deleteTemplate(this.projectTemplateDir);
 	}
