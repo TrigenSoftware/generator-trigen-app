@@ -1,4 +1,8 @@
 
+import {
+	getValue
+} from './helpers';
+
 export default function editPackageJson(sourcePkg, targetPkg, pkgProps) {
 
 	if (!pkgProps) {
@@ -10,7 +14,19 @@ export default function editPackageJson(sourcePkg, targetPkg, pkgProps) {
 		...pkgProps
 	};
 
-	pkg.engines = targetPkg.engines;
+	pkg.repository = {
+		type: 'git',
+		url:  getValue(
+			[pkg, 'repository', 'url'],
+			[pkg, 'repository'],
+			''
+		)
+	};
+	pkg.bugs = {
+		url: /^http/.test(pkg.repository.url)
+			? `${pkg.repository.url}/issues`
+			: ''
+	};
 	pkg.scripts = targetPkg.scripts;
 
 	if (pkg.license == 'private') {

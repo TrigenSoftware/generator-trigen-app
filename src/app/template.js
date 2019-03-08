@@ -121,7 +121,9 @@ export function getFiles({
 		projectTemplatePath('.*'),
 		projectTemplatePath('**', '*'),
 		`!${projectTemplatePath('README.md')}`,
-		`!${projectTemplatePath('yarn.lock')}`
+		`!${projectTemplatePath('yarn.lock')}`,
+		`!${projectTemplatePath('package.json')}`,
+		`!${projectTemplatePath('src', 'manifest.json')}`
 	];
 
 	if (!license) {

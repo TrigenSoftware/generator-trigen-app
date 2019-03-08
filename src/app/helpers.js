@@ -86,10 +86,12 @@ function sshToUrl(ssh) {
 		return '';
 	}
 
-	return ssh
-		.replace(/^git@/i, '')
-		.replace(/\.git$/i, '')
-		.replace(/:/g, '/');
+	return `https://${
+		ssh
+			.replace(/^git@/i, '')
+			.replace(/\.git$/i, '')
+			.replace(/:/g, '/')
+	}`;
 }
 
 export function gitUrl(cwd) {

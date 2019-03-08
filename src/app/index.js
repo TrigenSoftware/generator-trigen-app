@@ -23,8 +23,14 @@ export default class GeneratorTrigenFrontend extends Generator {
 
 		super(args, opts);
 
+		this.argument('projectDirectory', {
+			description: 'Project directory to create',
+			optional:    true,
+			default:     false
+		});
+
 		this.option('silent', {
-			description: 'Run generator without prompts, using defaults from .yo-rc.json.',
+			description: 'Run generator without prompts, using defaults from .yo-rc.json',
 			alias:       'S',
 			default:     false
 		});
@@ -33,6 +39,21 @@ export default class GeneratorTrigenFrontend extends Generator {
 		this.pkg = false;
 		this.webman = false;
 		this.projectTemplateDir = null;
+
+		this._changeDestinationRoot();
+	}
+
+	_changeDestinationRoot() {
+
+		const [
+			projectDirectory
+		] = this.arguments;
+
+		if (projectDirectory) {
+			this.destinationRoot(
+				this.destinationPath(projectDirectory)
+			);
+		}
 	}
 
 	projectTemplatePath(...args) {

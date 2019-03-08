@@ -56,6 +56,7 @@ export default async function askForPackageInfo(generator, props, pkg) {
 		name:    'repository',
 		message: 'repository url:',
 		default: getValue(
+			[pkg, 'repository', 'url'],
 			[pkg, 'repository'],
 			[props, 'pkg', 'repository'],
 			await gitUrl(destinationRoot)
