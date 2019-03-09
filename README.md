@@ -35,5 +35,5 @@ yarn global add yo generator-trigen-app
 Now you can run generator:
 
 ```bash
-yo trigen-app
+yo trigen-app [<projectDirectory>]
 ```
