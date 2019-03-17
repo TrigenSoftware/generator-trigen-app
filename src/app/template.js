@@ -95,8 +95,8 @@ export function makeReadme(weatherReadme, { pkg }) {
 	let env = '';
 
 	try {
-		scripts = /(## Available scripts[\s\S]*\n)(\n#|$)/gm.exec(weatherReadme)[1];
-		env = /(## Environment variables[\s\S]*\n)(\n#|$)/gm.exec(weatherReadme)[1];
+		scripts = /(## Available scripts[\s\S]*\n)\n##/gm.exec(weatherReadme)[1];
+		env = /(## Environment variables[\s\S]*\n)$/gm.exec(weatherReadme)[1];
 	} catch (err) {
 		// ignore
 	}
