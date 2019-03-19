@@ -1,5 +1,4 @@
 import path from 'path';
-import fs from 'fs';
 import Generator from 'yeoman-generator';
 import chalk from 'chalk';
 import yosay from 'yosay';
@@ -201,11 +200,9 @@ export default class GeneratorTrigenFrontend extends Generator {
 		this._makeReadme();
 
 		const files = getFiles(
-			{
-				license: pkgProps && pkgProps.license == 'MIT',
-				src:     !fs.existsSync(this.destinationPath('src'))
-			},
-			this.projectTemplatePath.bind(this)
+			pkgProps,
+			this.projectTemplatePath.bind(this),
+			this.destinationPath.bind(this)
 		);
 
 		this.fs.copy(files, this.destinationRoot());

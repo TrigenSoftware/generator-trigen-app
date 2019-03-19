@@ -112,11 +112,15 @@ ${env}
 `;
 }
 
-export function getFiles({
-	license,
-	src
-}, projectTemplatePath) {
+export function getFiles(
+	pkgProps,
+	projectTemplatePath,
+	destinationPath
+) {
 
+	const license = pkgProps && pkgProps.license == 'MIT';
+	const src = !fs.existsSync(destinationPath('src'));
+	const storybook = !fs.existsSync(destinationPath('.storybook'));
 	const files = [
 		projectTemplatePath('.*'),
 		projectTemplatePath('**', '*'),
@@ -132,6 +136,10 @@ export function getFiles({
 
 	if (!src) {
 		files.push(`!${projectTemplatePath('src', '**', '*')}`);
+	}
+
+	if (storybook) {
+		files.unshift(projectTemplatePath('.storybook', '**', '*'));
 	}
 
 	return files;
