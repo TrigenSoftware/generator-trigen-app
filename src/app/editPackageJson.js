@@ -27,6 +27,11 @@ export default function editPackageJson(sourcePkg, targetPkg, pkgProps) {
 			? `${pkg.repository.url}/issues`
 			: ''
 	};
+
+	if (targetPkg.os) {
+		pkg.os = targetPkg.os;
+	}
+
 	pkg.scripts = targetPkg.scripts;
 
 	if (pkg.license == 'private') {
