@@ -1,0 +1,5 @@
+[
+	"@trigen/scripts-plugin-eslint",
+	"@trigen/scripts-preset-lib",
+	"@trigen/scripts-plugin-rollup"
+]

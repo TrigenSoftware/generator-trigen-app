@@ -16,12 +16,11 @@
     "node": ">=6.4.0"
   },
   "scripts": {
-    "lint": "eslint --cache 'src/**/*.js'",
-    "checkSize": "size-limit",
-    "test": "npm run lint && npm run build && npm run checkSize",
-    "build": "rollup -c",
-    "watch": "rollup -c -w",
-    "cleanPublish": "npm run test && clean-publish"
+    "lint": "trigen-scripts lint",
+    "checkSize": "trigen-scripts checkSize",
+    "test": "trigen-scripts test",
+    "build": "trigen-scripts build",
+    "cleanPublish": "trigen-scripts cleanPublish"
   },
   "keywords": [
     "trigen",
@@ -32,29 +31,21 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.3.4",
-    "axios": "^0.18.0",
+    "@babel/runtime": "^7.4.5",
+    "axios": "^0.19.0",
     "chalk": "^2.4.2",
-    "del": "^4.0.0",
-    "unzipper": "^0.9.11",
-    "yeoman-generator": "^3.2.0",
+    "core-js": "3",
+    "del": "^4.1.1",
+    "unzipper": "^0.10.0",
+    "yeoman-generator": "^4.0.1",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/node": "^7.2.2",
-    "babel-preset-trigen": "^2.0.3",
-    "browserslist-config-trigen": "^1.1.0",
-    "clean-publish": "^1.1.0",
-    "eslint": "^5.15.1",
-    "eslint-config-trigen": "^3.2.3",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.5",
-    "rollup": "^1.6.0",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.1",
-    "rollup-plugin-eslint": "^5.0.0",
-    "size-limit": "^0.21.1"
+    "@trigen/scripts": "^2.0.1",
+    "@trigen/scripts-plugin-eslint": "^2.0.1",
+    "@trigen/scripts-plugin-rollup": "^2.0.1",
+    "@trigen/scripts-preset-lib": "^2.0.1",
+    "rollup-plugin-eslint": "^6.0.0"
   },
   "files": [
     "generators"
