@@ -1,0 +1,28 @@
+{
+  "generator-trigen-app": {
+    "editPackage": false,
+    "pkg": {
+      "name": "project",
+      "version": "1.0.0",
+      "description": "Desc",
+      "repository": "",
+      "author": "dangreen",
+      "license": "MIT"
+    },
+    "editWebman": false,
+    "webman": {
+      "name": "project",
+      "short_name": "project",
+      "description": "Desc",
+      "dir": "auto",
+      "lang": "en-US",
+      "display": "standalone",
+      "orientation": "portrait",
+      "scope": "/",
+      "start_url": "/?homescreen=1",
+      "background_color": "red",
+      "theme_color": "red"
+    },
+    "gitInit": false
+  }
+}

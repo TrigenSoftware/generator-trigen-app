@@ -76,7 +76,7 @@ export function whoAmI() {
 	});
 }
 
-function sshToUrl(ssh) {
+export function sshToUrl(ssh) {
 
 	if (/^http/.test(ssh)) {
 		return ssh;

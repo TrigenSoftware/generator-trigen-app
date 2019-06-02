@@ -34,6 +34,12 @@ export default class GeneratorTrigenFrontend extends Generator {
 			default:     false
 		});
 
+		this.option('saveLock', {
+			description: 'Save `yarn.lock` from template.',
+			alias:       'L',
+			default:     false
+		});
+
 		this.props = {};
 		this.pkg = false;
 		this.webman = false;
@@ -118,7 +124,7 @@ export default class GeneratorTrigenFrontend extends Generator {
 		this.props = await prompts(this, this.pkg, this.webman);
 	}
 
-	_readTargetPackage() {
+	_readTemplatePackage() {
 		return this.fs.readJSON(
 			this.projectTemplatePath('package.json')
 		);
@@ -126,14 +132,14 @@ export default class GeneratorTrigenFrontend extends Generator {
 
 	_editPackageJson() {
 
-		const targetPkg = this._readTargetPackage();
+		const templatePkg = this._readTemplatePackage();
 		const { pkg: pkgProps } = this.props;
 		const { pkg } = this;
 
-		this.pkg = editPackageJson(pkg, targetPkg, pkgProps);
+		this.pkg = editPackageJson(pkg, templatePkg, pkgProps);
 	}
 
-	_readTargetWebmanifest() {
+	_readTemplateWebmanifest() {
 		return this.fs.readJSON(
 			this.projectTemplatePath('src', 'manifest.json')
 		);
@@ -141,11 +147,11 @@ export default class GeneratorTrigenFrontend extends Generator {
 
 	_editWebmanifest() {
 
-		const targetWebman = this._readTargetWebmanifest();
+		const templateWebman = this._readTemplateWebmanifest();
 		const { webman: webmanProps } = this.props;
 		const { webman } = this;
 
-		this.webman = editWebmanifest(webman, targetWebman, webmanProps);
+		this.webman = editWebmanifest(webman, templateWebman, webmanProps);
 	}
 
 	async configuring() {
@@ -201,6 +207,7 @@ export default class GeneratorTrigenFrontend extends Generator {
 
 		const files = getFiles(
 			pkgProps,
+			this.options,
 			this.projectTemplatePath.bind(this),
 			this.destinationPath.bind(this)
 		);

@@ -18,7 +18,8 @@
   "scripts": {
     "lint": "trigen-scripts lint",
     "checkSize": "trigen-scripts checkSize",
-    "test": "trigen-scripts test",
+    "jest": "trigen-scripts jest",
+    "test": "trigen-scripts test && node test/integration/generator.spec.js",
     "build": "trigen-scripts build",
     "cleanPublish": "trigen-scripts cleanPublish"
   },
@@ -42,9 +43,11 @@
   },
   "devDependencies": {
     "@trigen/scripts": "^2.0.1",
-    "@trigen/scripts-plugin-eslint": "^2.0.1",
+    "@trigen/scripts-plugin-eslint": "^2.0.4",
+    "@trigen/scripts-plugin-jest": "^2.0.4",
     "@trigen/scripts-plugin-rollup": "^2.0.1",
-    "@trigen/scripts-preset-lib": "^2.0.1",
+    "@trigen/scripts-preset-lib": "^2.0.4",
+    "eslint-plugin-jest": "^22.6.4",
     "rollup-plugin-eslint": "^6.0.0"
   },
   "files": [

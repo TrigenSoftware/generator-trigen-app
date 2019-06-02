@@ -114,6 +114,7 @@ ${env}
 
 export function getFiles(
 	pkgProps,
+	options,
 	projectTemplatePath,
 	destinationPath
 ) {
@@ -124,14 +125,17 @@ export function getFiles(
 	const files = [
 		projectTemplatePath('.*'),
 		projectTemplatePath('**', '*'),
-		`!${projectTemplatePath('README.md')}`,
-		`!${projectTemplatePath('yarn.lock')}`,
-		`!${projectTemplatePath('package.json')}`,
-		`!${projectTemplatePath('src', 'manifest.json')}`
+		`!${projectTemplatePath('README.m{d,d}')}`,
+		`!${projectTemplatePath('package.jso{n,n}')}`,
+		`!${projectTemplatePath('src', 'manifest.jso{n,n}')}`
 	];
 
+	if (!options.saveLock) {
+		files.push(`!${projectTemplatePath('yarn.loc{k,k}')}`,);
+	}
+
 	if (!license) {
-		files.push(`!${projectTemplatePath('LICENSE')}`);
+		files.push(`!${projectTemplatePath('LICENS{E,E}')}`);
 	}
 
 	if (!src) {

@@ -1,12 +1,12 @@
 
-export default function editWebmanifest(sourceWebman, targetWebman, webmanProps) {
+export default function editWebmanifest(projectWebman, templateWebman, webmanProps) {
 
 	if (!webmanProps) {
-		return sourceWebman;
+		return projectWebman;
 	}
 
 	const webman = {
-		...(sourceWebman || targetWebman),
+		...(projectWebman || templateWebman),
 		...webmanProps
 	};
 

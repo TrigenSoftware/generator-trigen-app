@@ -1,0 +1,14 @@
+{
+  "name": "generator-trigen-app-sandbox",
+  "version": "0.0.0",
+  "description": "",
+  "author": "dangreen",
+  "license": "MIT",
+  "scripts": {
+    "yo": "yo trigen-app"
+  },
+  "dependencies": {
+    "yo": "*",
+    "generator-trigen-app": "../../../"
+  }
+}

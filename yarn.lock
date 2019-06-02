@@ -1090,33 +1090,33 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@trigen/scripts-plugin-babel@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-babel/-/scripts-plugin-babel-2.0.1.tgz#36988e3911e3563b931ff52c90a9ac51d3e94d73"
-  integrity sha512-nCn9ZOq7tlfepILY/xB8Ds2oWpZxKMh9wOrikaEORmLiYH7msOikh5o+stW8BsURRPinNGkOZzAb7xBeBPIT3g==
+"@trigen/scripts-plugin-babel@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-babel/-/scripts-plugin-babel-2.0.4.tgz#fcf81b8996dc2a90b74a63f091a369c42839756f"
+  integrity sha512-81qDGWqC7YxXnzSLYMY1nrhzEFgwJwKRaDMereic7D4L0rhMjgehblMZgn5EZB2HPQrtNN7xdbSpN7AA9HpoBQ==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.4.0"
     "@babel/node" "^7.0.0"
     "@babel/runtime" "^7.4.2"
-    "@trigen/scripts" "^2.0.1"
+    "@trigen/scripts" "^2.0.4"
     babel-preset-trigen "^2.2.1"
 
-"@trigen/scripts-plugin-eslint@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-eslint/-/scripts-plugin-eslint-2.0.1.tgz#533851820ee59d910cfb999289b209c89c9a1cf0"
-  integrity sha512-3R6UOUlzKYkKBOJjRFmK2oaP1urHupZXZfEiyGUwGnuWo5daxzzy7fsLRl+8m3TUy98O+qys0JgtR9GO2mC1Jg==
+"@trigen/scripts-plugin-eslint@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-eslint/-/scripts-plugin-eslint-2.0.4.tgz#9d7f7044e1b7aa0a6c1c2a2a2408ea356e64959d"
+  integrity sha512-kz5eDTWJrglVi+Zf2fRIcdLlc2QQ8KfO+PAEfNjTz9vl5dm+Qp4fEit2PMg1PK61+Er6l2IMgURGRXPSQL8Tfw==
   dependencies:
-    "@trigen/scripts" "^2.0.1"
+    "@trigen/scripts" "^2.0.4"
     eslint "^5.15.3"
     eslint-config-trigen "^3.2.3"
 
-"@trigen/scripts-plugin-jest@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-jest/-/scripts-plugin-jest-2.0.1.tgz#c46671b32438355d6b66fe3d5ad868a1e6cddf8b"
-  integrity sha512-iy7hn1ztMT6NgK6TwhLwkzjnU+wI87gI8FFUMyQguNJyy1SxijvsTGWLBMW+xwHAbnQ+pkfFffA/r/mjwS9Zeg==
+"@trigen/scripts-plugin-jest@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-jest/-/scripts-plugin-jest-2.0.4.tgz#331f3deaa99ba8de65e87cadd4921c6510b63b76"
+  integrity sha512-ic23TuqSGxSjurBJ0wp0jMcSuako2i9BNnQMF2zcLXix2AseoOocf0ALTlbrWRKOYWzdiasTVc2RmkwcskfoYA==
   dependencies:
-    "@trigen/scripts" "^2.0.1"
+    "@trigen/scripts" "^2.0.4"
     "@types/jest" "^24.0.10"
     babel-jest "^24.5.0"
     jest "^24.3.0"
@@ -1132,14 +1132,13 @@
     rollup-plugin-babel-minify "^8.0.0"
     rollup-plugin-commonjs "^10.0.0"
 
-"@trigen/scripts-preset-lib@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-preset-lib/-/scripts-preset-lib-2.0.1.tgz#4a17fcb4778e948c21f0be619dd4ec6e9b34097a"
-  integrity sha512-rFOEkzizlaPnYwIvgN3HeVfEhxvcSADgHyei8p+w/QHzq/LPj8oFyb5FJf/chJTEXKDMKot8Yd6btq2PEzVDPw==
+"@trigen/scripts-preset-lib@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-preset-lib/-/scripts-preset-lib-2.0.4.tgz#ce946fa3e135733013726b4cd24be78cf4f0f89e"
+  integrity sha512-S3sBqUzwIH7fIcZxE8qDG5emsYxsGNTTqL1wyEMjwIiMOS4xKZAi5G8iAgV2pxvCtCeQGfhjRAV5GdxA7U8UhQ==
   dependencies:
-    "@trigen/scripts" "^2.0.1"
-    "@trigen/scripts-plugin-babel" "^2.0.1"
-    "@trigen/scripts-plugin-jest" "^2.0.1"
+    "@trigen/scripts" "^2.0.4"
+    "@trigen/scripts-plugin-babel" "^2.0.4"
     browserslist-config-trigen "^1.1.0"
     clean-publish "^1.1.0"
     coveralls "^3.0.0"
@@ -1151,6 +1150,18 @@
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@trigen/scripts/-/scripts-2.0.1.tgz#dfd927c10d91ed0b28777d1f5824840b03bfb2b6"
   integrity sha512-aOfqOgHpKtl9ssFe9SumHc/GPgOlZSWQ+b+rd+z5BC4OJ/IrcibGi3feZgZVMk6LkFzkVLY/YfZtCnmwqVE32Q==
+  dependencies:
+    "@babel/runtime" "^7.4.2"
+    chalk "^2.4.2"
+    core-js "2"
+    immutability-helper "^3.0.0"
+    rcfile "^1.0.3"
+    resolve-cwd "^3.0.0"
+
+"@trigen/scripts@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts/-/scripts-2.0.4.tgz#de2e99be73051ed6e13a00274948a277d3feb107"
+  integrity sha512-oIeitvuvM5VpTj2j3byENqEHc8TPn8PpCXufljDZcwZ2oKb0wgBjzbBk0oRemKTCWHi7dBuK1CABmyMvRS1seA==
   dependencies:
     "@babel/runtime" "^7.4.2"
     chalk "^2.4.2"
@@ -3701,6 +3712,11 @@ eslint-plugin-import@^2.13.0:
     minimatch "^3.0.4"
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
+
+eslint-plugin-jest@^22.6.4:
+  version "22.6.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.6.4.tgz#2895b047dd82f90f43a58a25cf136220a21c9104"
+  integrity sha512-36OqnZR/uMCDxXGmTsqU4RwllR0IiB/XF8GW3ODmhsjiITKuI0GpgultWFt193ipN3HARkaIcKowpE6HBvRHNg==
 
 eslint-plugin-react@^7.10.0:
   version "7.13.0"

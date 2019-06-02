@@ -3,14 +3,14 @@ import {
 	getValue
 } from './helpers';
 
-export default function editPackageJson(sourcePkg, targetPkg, pkgProps) {
+export default function editPackageJson(projectPkg, templatePkg, pkgProps) {
 
 	if (!pkgProps) {
-		return sourcePkg;
+		return projectPkg;
 	}
 
 	const pkg = {
-		...(sourcePkg || targetPkg),
+		...(projectPkg || templatePkg),
 		...pkgProps
 	};
 
@@ -28,21 +28,21 @@ export default function editPackageJson(sourcePkg, targetPkg, pkgProps) {
 			: ''
 	};
 
-	if (targetPkg.os) {
-		pkg.os = targetPkg.os;
+	if (templatePkg.os) {
+		pkg.os = templatePkg.os;
 	}
 
-	pkg.scripts = targetPkg.scripts;
+	pkg.scripts = templatePkg.scripts;
 
-	if (pkg.license == 'private') {
+	if (pkg.license === 'private') {
 		pkg.license = 'UNLICENSED';
 		pkg.private = true;
 	} else {
 		Reflect.deleteProperty(pkg, 'private');
 	}
 
-	pkg.dependencies = targetPkg.dependencies;
-	pkg.devDependencies = targetPkg.devDependencies;
+	pkg.dependencies = templatePkg.dependencies;
+	pkg.devDependencies = templatePkg.devDependencies;
 
 	return pkg;
 }

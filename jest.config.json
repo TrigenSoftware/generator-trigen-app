@@ -1,6 +1,6 @@
 {
 	"testEnvironment": "node",
-	"testRegex": "/test/.*\\.spec\\.js$",
+	"testRegex": "/test/unit/.*\\.spec\\.js$",
 	"transform": {
 		"^.+\\.(jsx?|tsx?)$": "babel-jest"
 	},
