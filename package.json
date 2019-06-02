@@ -1,6 +1,6 @@
 {
   "name": "generator-trigen-app",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Yeoman generator for web app development.",
   "author": "dangreen",
   "license": "MIT",
@@ -42,11 +42,13 @@
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "@trigen/scripts": "^2.0.1",
-    "@trigen/scripts-plugin-eslint": "^2.0.4",
-    "@trigen/scripts-plugin-jest": "^2.0.4",
+    "@trigen/scripts": "^2.1.0",
+    "@trigen/scripts-plugin-babel": "^2.1.0",
+    "@trigen/scripts-plugin-eslint": "^2.1.0",
+    "@trigen/scripts-plugin-jest": "^2.1.0",
     "@trigen/scripts-plugin-rollup": "^2.0.1",
-    "@trigen/scripts-preset-lib": "^2.0.4",
+    "@trigen/scripts-plugin-size-limit": "^2.1.0",
+    "@trigen/scripts-preset-lib": "^2.1.0",
     "eslint-plugin-jest": "^22.6.4",
     "rollup-plugin-eslint": "^6.0.0"
   },
