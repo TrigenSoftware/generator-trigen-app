@@ -23,6 +23,6 @@
       "background_color": "red",
       "theme_color": "red"
     },
-    "gitInit": false
+    "gitInit": true
   }
 }
