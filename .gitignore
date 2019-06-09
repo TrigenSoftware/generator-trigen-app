@@ -45,3 +45,5 @@ lib
 package
 build
 generators
+
+.env

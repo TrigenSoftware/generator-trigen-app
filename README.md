@@ -1,4 +1,3 @@
-
 # generator-trigen-app
 
 [![NPM version][npm]][npm-url]
@@ -8,7 +7,7 @@
 [![Greenkeeper badge][greenkeeper]][greenkeeper-url]
 
 [npm]: https://img.shields.io/npm/v/generator-trigen-app.svg
-[npm-url]: https://www.npmjs.com/package/generator-trigen-app
+[npm-url]: https://npmjs.com/package/generator-trigen-app
 
 [node]: https://img.shields.io/node/v/generator-trigen-app.svg
 [node-url]: https://nodejs.org
