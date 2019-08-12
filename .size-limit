@@ -2,7 +2,6 @@
 	{
 		"path": "generators/app/index.js",
 		"limit": "25 KB",
-		"webpack": false,
-		"running": false
+		"webpack": false
 	}
 ]

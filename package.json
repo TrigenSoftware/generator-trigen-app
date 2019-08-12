@@ -43,6 +43,7 @@
     "yosay": "^2.0.2"
   },
   "devDependencies": {
+    "@size-limit/preset-small-lib": "^2.0.2",
     "@trigen/scripts": "2.7.0",
     "@trigen/scripts-plugin-babel": "2.7.0",
     "@trigen/scripts-plugin-eslint": "2.7.0",
