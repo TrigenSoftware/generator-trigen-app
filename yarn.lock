@@ -4793,10 +4793,10 @@ got@^6.2.0:
     unzip-response "^2.0.1"
     url-parse-lax "^1.0.0"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
-  version "4.1.15"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
-  integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.2.tgz#6f0952605d0140c1cfdb138ed005775b92d67b02"
+  integrity sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
 
 grouped-queue@^0.3.3:
   version "0.3.3"
@@ -9464,9 +9464,9 @@ unzip-response@^2.0.1:
   integrity sha1-0vD3N9FrBhXnKmk17QQhRXLVb5c=
 
 unzipper@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.3.tgz#455ee5f709b5aae716f1d91e625f919417819677"
-  integrity sha512-vH3+KAfi01r2wioCve0djy0NRpQUfjVFoLWdsup8u6xdCId2vn8TEDReRfYGjdGuVQ/2aEDaWgeRJCcPOsRHqw==
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.5.tgz#4d189ae6f8af634b26efe1a1817c399e0dd4a1a0"
+  integrity sha512-i5ufkXNjWZYxU/0nKKf6LkvW8kn9YzRvfwuPWjXP+JTFce/8bqeR0gEfbiN2IDdJa6ZU6/2IzFRLK0z1v0uptw==
   dependencies:
     big-integer "^1.6.17"
     binary "~0.3.0"
@@ -9474,6 +9474,7 @@ unzipper@^0.10.3:
     buffer-indexof-polyfill "~1.0.0"
     duplexer2 "~0.1.4"
     fstream "^1.0.12"
+    graceful-fs "^4.2.2"
     listenercount "~1.0.1"
     readable-stream "~2.3.6"
     setimmediate "~1.0.4"
