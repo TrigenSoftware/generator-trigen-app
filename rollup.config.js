@@ -2,7 +2,7 @@ import {
 	external
 } from '@trigen/scripts-plugin-rollup/helpers';
 import { eslint } from 'rollup-plugin-eslint';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
