@@ -9698,9 +9698,9 @@ unzip-response@^2.0.1:
   integrity sha1-0vD3N9FrBhXnKmk17QQhRXLVb5c=
 
 unzipper@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.3.tgz#455ee5f709b5aae716f1d91e625f919417819677"
-  integrity sha512-vH3+KAfi01r2wioCve0djy0NRpQUfjVFoLWdsup8u6xdCId2vn8TEDReRfYGjdGuVQ/2aEDaWgeRJCcPOsRHqw==
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/unzipper/-/unzipper-0.10.7.tgz#ed5d72d12337f66f790d42fef47eb9f9de0a0906"
+  integrity sha512-0ltrg7/F12h3KqY1zBfZB6bVnPTVlzhdK1iu2xCaGxGMF/Es9ETMAS0M89CnCB4hemPb/AoTWtj+62l7XFZKqQ==
   dependencies:
     big-integer "^1.6.17"
     binary "~0.3.0"
@@ -9708,6 +9708,7 @@ unzipper@^0.10.3:
     buffer-indexof-polyfill "~1.0.0"
     duplexer2 "~0.1.4"
     fstream "^1.0.12"
+    graceful-fs "^4.2.2"
     listenercount "~1.0.1"
     readable-stream "~2.3.6"
     setimmediate "~1.0.4"
