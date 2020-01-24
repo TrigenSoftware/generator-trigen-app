@@ -56,7 +56,14 @@ try {
 	});
 
 } catch (err) {
+
+	execSync(`yarn artifacts`, {
+		stdio: 'inherit',
+		cwd:   WEATHER_PATH
+	});
+
 	throw err;
+
 } finally {
 
 	if (!shouldLeave) {
