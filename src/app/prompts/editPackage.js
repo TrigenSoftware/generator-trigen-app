@@ -1,4 +1,6 @@
-import { getValue } from '../helpers';
+import {
+	getValue
+} from '../helpers';
 import askForPackageInfo from './packageInfo';
 
 export default async function askForEditPackage(generator, props, pkg) {

@@ -1,4 +1,6 @@
-import { getValue } from '../helpers';
+import {
+	getValue
+} from '../helpers';
 import askForWebmanInfo from './webmanifestInfo';
 
 export default async function askForEditWebman(generator, props, pkg, webman) {

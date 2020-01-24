@@ -1,4 +1,3 @@
-
 import {
 	getValue
 } from './helpers';

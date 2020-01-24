@@ -1,4 +1,5 @@
 {
+	"extends": "trigen/commonjs",
 	"plugins": [
 		"jest"
 	],
@@ -8,6 +9,7 @@
 	"rules": {
 		"no-magic-numbers": "off",
 		"max-nested-callbacks": "off",
-		"no-sync": "off"
+		"no-sync": "off",
+		"no-console": "off"
 	}
 }

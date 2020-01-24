@@ -1,5 +1,7 @@
 import path from 'path';
-import { getValue } from '../helpers';
+import {
+	getValue
+} from '../helpers';
 
 const dir = [
 	'auto',
