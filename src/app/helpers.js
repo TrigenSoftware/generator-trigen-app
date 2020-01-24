@@ -20,7 +20,7 @@ export function getValue(...values) {
 					tres = key(tres);
 					counter++;
 				} else
-				if (typeof tres != 'undefined' && tres.hasOwnProperty(key)) {
+				if (typeof tres != 'undefined' && Reflect.has(tres, key)) {
 					tres = tres[key];
 					counter++;
 				} else {
