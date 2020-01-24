@@ -57,6 +57,8 @@ try {
 
 } catch (err) {
 
+	console.log(chalk.blue('\n> Collect artifacts...\n'));
+
 	execSync(`yarn artifacts`, {
 		stdio: 'inherit',
 		cwd:   WEATHER_PATH
