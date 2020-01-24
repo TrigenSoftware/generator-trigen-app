@@ -23,3 +23,8 @@ DO NOT TOUCH. SAVE IT ON TOP.
 - ...
 
 -->
+
+## [2.0.0] - 2020-01-24
+### Changed
+- NodeJS 10 is minimum required;
+- trigen-scripts v4
