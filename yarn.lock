@@ -1281,7 +1281,7 @@
     webpack "^4.41.5"
     webpack-bundle-analyzer "^3.6.0"
 
-"@trigen/scripts-plugin-babel@4.0.0":
+"@trigen/scripts-plugin-babel@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-babel/-/scripts-plugin-babel-4.0.0.tgz#be88dfe016c5a325339e8bbebcd074ea3c03e9ad"
   integrity sha512-duyjzf/o2k9jFNvDBmNbv0X8H+cIFuN6j0neIi3chQaFTL0T5Ao/2A0gsqWNeU9aTWNYpDFy2zAF0YIgzjMAAg==
@@ -1293,7 +1293,7 @@
     "@trigen/scripts" "^4.0.0"
     babel-preset-trigen "^2.2.1"
 
-"@trigen/scripts-plugin-eslint@4.0.0":
+"@trigen/scripts-plugin-eslint@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-eslint/-/scripts-plugin-eslint-4.0.0.tgz#b17a045992a97f2e5b1628de5f7c672d61496efa"
   integrity sha512-82jTqRJtTba81ipOSRhdnUBNEWeEFzVmIJQStANVtirTuxdjQADTc30u+qMimLa52mTIpzf0Q+tgivwHl4x2GA==
@@ -1302,7 +1302,7 @@
     eslint "^6.1.0"
     eslint-config-trigen "^3.2.3"
 
-"@trigen/scripts-plugin-jest@4.0.0":
+"@trigen/scripts-plugin-jest@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-jest/-/scripts-plugin-jest-4.0.0.tgz#5df949a0745ea32dcbd7c8ac14f40d00533d25c8"
   integrity sha512-wJD4KbY7C7oEpSjSmtLxmrl7w+7+2OK8yTRSiCr7ShrJ/EcFywmiJXUGxH7wIMVUz6wMzkApZcpSUkl1/4ZJVQ==
@@ -1315,7 +1315,7 @@
     jest "^25.1.0"
     nodemailer "^6.3.0"
 
-"@trigen/scripts-plugin-rollup@4.0.0":
+"@trigen/scripts-plugin-rollup@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-rollup/-/scripts-plugin-rollup-4.0.0.tgz#c2c9d7df842b3971fd22f88adcca2d6767d672ae"
   integrity sha512-+hsHj6Huj1SDDQD9oh/MuhAdPjVSIfCxPJ9CRJGQDS87ypzup7fyWGx54k6RjYbmDJAqbguN8ijR0XTrcEnxCQ==
@@ -1326,7 +1326,7 @@
     rollup-plugin-babel "^4.0.3"
     rollup-plugin-babel-minify "^9.0.0"
 
-"@trigen/scripts-plugin-size-limit@4.0.0":
+"@trigen/scripts-plugin-size-limit@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-size-limit/-/scripts-plugin-size-limit-4.0.0.tgz#eccd867182be9ded55a1c9a2dde32df1628e57a9"
   integrity sha512-Ytkuip1d7z0MXjgZZdtQTkaBxx6RIk3TpvqeLtaKc1w4Atf8CRnQH+shG+TAU0xdWD8xyYPi1zITdjL60bfgZQ==
@@ -1334,7 +1334,7 @@
     "@trigen/scripts" "^4.0.0"
     size-limit "^3.0.0"
 
-"@trigen/scripts-preset-lib@4.0.0":
+"@trigen/scripts-preset-lib@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts-preset-lib/-/scripts-preset-lib-4.0.0.tgz#7d0ab5bc01c2c317d307b8ef1f429b34b9664693"
   integrity sha512-+ctvD+kvKS+XIwkIRMOoZdtNafVR/O5b6RLtXIYtwoslRm6dWxSrdj2VO4Q7xbcq2TAFic4NwZWtzk/YZyClZg==
@@ -1346,7 +1346,7 @@
     husky "^4.0.9"
     lint-staged "^10.0.0"
 
-"@trigen/scripts@4.0.0", "@trigen/scripts@^4.0.0":
+"@trigen/scripts@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts/-/scripts-4.0.0.tgz#f2e03de69e760a56faab0549c6a0c787a316ca83"
   integrity sha512-6G1sFEJd3YNBBfeynFIp2BZmaXTq0C8wQXV0NsQK7WZYgpjbHuvtJ0iu2O8+by5+n5oabG67VmjpWT0X29zQog==
@@ -4805,6 +4805,13 @@ grouped-queue@^0.3.3:
   dependencies:
     lodash "^4.17.2"
 
+grouped-queue@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/grouped-queue/-/grouped-queue-1.1.0.tgz#63e3f9ca90af952269d1d40879e41221eacc74cb"
+  integrity sha512-rZOFKfCqLhsu5VqjBjEWiwrYqJR07KxIkH4mLZlNlGDfntbb4FbMyGFP14TlvRPrU9S3Hnn/sgxbC5ZeN0no3Q==
+  dependencies:
+    lodash "^4.17.15"
+
 growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
@@ -6617,10 +6624,10 @@ minimist@0.0.8:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
   integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
 
-minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-  integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
 mississippi@^3.0.0:
   version "3.0.0"
@@ -8447,7 +8454,7 @@ semver@7.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@7.1.1, semver@^7.1.1:
+semver@7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.1.1.tgz#29104598a197d6cbe4733eeecbe968f7b43a9667"
   integrity sha512-WfuG+fl6eh3eZ2qAf6goB7nhiCd7NPXhmyFxigB/TOkQyeLP8w8GsVehvtGNtnNmyboz4TgeK40B1Kbql/8c5A==
@@ -8456,6 +8463,11 @@ semver@^6.0.0, semver@^6.1.2, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+semver@^7.1.1, semver@^7.2.1:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
+  integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 send@0.17.1:
   version "0.17.1"
@@ -9949,9 +9961,9 @@ yeoman-environment@^2.3.4:
     untildify "^3.0.3"
 
 yeoman-generator@^4.0.1:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-4.4.0.tgz#182c992509d4b7512a6bbe17c0dfdf7e52953344"
-  integrity sha512-Z+eMdeyKuhbgnghhONh+xv+YztccJLgCQ8dOogq/9oLJAU/+D7oOdpLK/UryEoJQd5merJIDgCedVIxhtPsV2g==
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-4.8.3.tgz#efbe9a7ba630dc30325ed9724f4766583832005b"
+  integrity sha512-yDPHBhfglqiyYlqBnaAmcE/wPznwSx11HCGVCpnnsqpnp45HmdsuBtiFSNDcygiFmz1HmkFWRLWHTai/b+9eiQ==
   dependencies:
     async "^2.6.2"
     chalk "^2.4.2"
@@ -9967,16 +9979,19 @@ yeoman-generator@^4.0.1:
     istextorbinary "^2.5.1"
     lodash "^4.17.11"
     make-dir "^3.0.0"
-    mem-fs-editor "^6.0.0"
-    minimist "^1.2.0"
+    minimist "^1.2.5"
     pretty-bytes "^5.2.0"
     read-chunk "^3.2.0"
     read-pkg-up "^5.0.0"
     rimraf "^2.6.3"
     run-async "^2.0.0"
+    semver "^7.2.1"
     shelljs "^0.8.3"
     text-table "^0.2.0"
     through2 "^3.0.1"
+  optionalDependencies:
+    grouped-queue "^1.1.0"
+    mem-fs-editor "^6.0.0"
     yeoman-environment "^2.3.4"
 
 yosay@^2.0.2:
