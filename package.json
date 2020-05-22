@@ -1,6 +1,6 @@
 {
   "name": "generator-trigen-app",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Yeoman generator for web app development.",
   "author": "dangreen",
   "license": "MIT",
