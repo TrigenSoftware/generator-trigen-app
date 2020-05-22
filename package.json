@@ -33,10 +33,9 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.5.5",
+    "@babel/runtime-corejs3": "^7.9.6",
     "axios": "^0.19.0",
     "chalk": "^3.0.0",
-    "core-js": "3",
     "del": "^5.0.0",
     "unzipper": "^0.10.3",
     "yeoman-generator": "^4.0.1",
@@ -45,7 +44,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^3.0.0",
     "@trigen/scripts": "^4.0.0",
-    "@trigen/scripts-plugin-babel": "^4.0.0",
+    "@trigen/scripts-plugin-babel": "^6.1.1",
     "@trigen/scripts-plugin-eslint": "^4.0.0",
     "@trigen/scripts-plugin-jest": "^6.1.1",
     "@trigen/scripts-plugin-rollup": "^6.0.0",
